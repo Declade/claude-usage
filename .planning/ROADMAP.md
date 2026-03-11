@@ -12,7 +12,7 @@ Four phases build the app bottom-up: scaffold the correct macOS app structure fi
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Scaffold** - Running macOS app in the menu bar with correct entitlements and no Dock icon
+- [x] **Phase 1: Scaffold** - Running macOS app in the menu bar with correct entitlements and no Dock icon (completed 2026-03-11)
 - [ ] **Phase 2: Data Layer** - Tested JSONL parser and token aggregator with correct rolling window math
 - [ ] **Phase 3: Live Display** - Full UI wired to real data with auto-refresh
 - [ ] **Phase 4: Login Persistence** - Launch-at-login toggle that survives reboots
@@ -72,7 +72,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scaffold | 0/1 (checkpoint) | In progress | - |
+| 1. Scaffold | 1/1 | Complete   | 2026-03-11 |
 | 2. Data Layer | 0/TBD | Not started | - |
 | 3. Live Display | 0/TBD | Not started | - |
 | 4. Login Persistence | 0/TBD | Not started | - |

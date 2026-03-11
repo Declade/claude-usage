@@ -60,7 +60,7 @@ completed: 2026-03-11
 - **Duration:** 2 min
 - **Started:** 2026-03-11T20:23:40Z
 - **Completed:** 2026-03-11T20:26:25Z
-- **Tasks:** 2 of 3 complete (Task 3 is human-verify checkpoint — awaiting user)
+- **Tasks:** 3 of 3 complete
 - **Files modified:** 9
 
 ## Accomplishments
@@ -78,7 +78,9 @@ Each task was committed atomically:
 
 1. **Task 1: Create verification infrastructure (Wave 0)** - `403362f` (chore)
 2. **Task 2: Generate Xcode project from XcodeGen spec** - `cbb9b5f` (feat)
-3. **Task 3: Verify running app** - awaiting human checkpoint approval
+3. **Task 3: Verify running app satisfies all Phase 1 success criteria** - `94a18a9` (chore — checkpoint approval)
+
+**Plan metadata:** committed with SUMMARY.md and state updates
 
 ## Files Created/Modified
 - `project.yml` - XcodeGen spec; source of truth for the Xcode project
@@ -121,10 +123,17 @@ Each task was committed atomically:
 None — no external service configuration required. App is fully local.
 
 ## Next Phase Readiness
-- Xcode scaffold is complete and buildable
+- Xcode scaffold is complete, buildable, and fully verified by user — all 6 smoke test checks passed
 - Architectural foundations locked: MenuBarExtra(.window), sandbox-off, LSUIElement=true, macOS 14.0, Swift 6.0
-- Phase 2 (data layer) can begin immediately after Task 3 checkpoint approval
-- Task 3 human verification still required: launch app, confirm no Dock icon, confirm panel opens, confirm Quit works
+- Phase 2 (data layer) can begin immediately
+- Concern from STATE.md: exact token limit values (4-hour and weekly windows) not yet confirmed — Phase 2 should check if Claude Code writes limit metadata to JSONL or a separate config; use user-editable defaults if not present
+
+## Self-Check: PASSED
+
+- FOUND: .planning/phases/01-scaffold/01-01-SUMMARY.md
+- FOUND commit: 403362f (Task 1 — verification infrastructure)
+- FOUND commit: cbb9b5f (Task 2 — Xcode project generation)
+- FOUND commit: 94a18a9 (Task 3 — checkpoint approval)
 
 ---
 *Phase: 01-scaffold*
