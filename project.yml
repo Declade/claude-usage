@@ -1,0 +1,43 @@
+name: ClaudeUsage
+options:
+  bundleIdPrefix: com.marcschuelke
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+
+targets:
+  ClaudeUsage:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - ClaudeUsage
+    info:
+      path: ClaudeUsage/Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleDisplayName: Claude Usage
+        NSHumanReadableCopyright: ""
+    entitlements:
+      path: ClaudeUsage/ClaudeUsage.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.marcschuelke.claudeusage
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        ENABLE_HARDENED_RUNTIME: YES
+
+  ClaudeUsageTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - ClaudeUsageTests
+    dependencies:
+      - target: ClaudeUsage
+    settings:
+      base:
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/ClaudeUsage.app/Contents/MacOS/ClaudeUsage"
+        BUNDLE_LOADER: "$(TEST_HOST)"
