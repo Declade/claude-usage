@@ -28,7 +28,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Clicking the menu bar icon opens a popover/panel (even if empty)
   3. A "Quit" item in the panel exits the app cleanly
   4. App Sandbox is disabled and an archive build can read files from the home directory without silent failure
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Create XcodeGen scaffold, source files, verification scripts, and confirm running menu bar app
 
 ### Phase 2: Data Layer
 **Goal**: A fully tested data layer correctly reads all JSONL token fields from ~/.claude/projects/, computes the 4-hour rolling window with timezone-safe math, and aggregates totals — all running on a background thread
