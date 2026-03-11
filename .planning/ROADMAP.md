@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 1 plan
 
 Plans:
-- [ ] 01-01-PLAN.md — Create XcodeGen scaffold, source files, verification scripts, and confirm running menu bar app
+- [~] 01-01-PLAN.md — Create XcodeGen scaffold, source files, verification scripts, and confirm running menu bar app (tasks 1-2 complete; Task 3 awaiting human verify)
 
 ### Phase 2: Data Layer
 **Goal**: A fully tested data layer correctly reads all JSONL token fields from ~/.claude/projects/, computes the 4-hour rolling window with timezone-safe math, and aggregates totals — all running on a background thread
@@ -72,7 +72,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scaffold | 0/TBD | Not started | - |
+| 1. Scaffold | 0/1 (checkpoint) | In progress | - |
 | 2. Data Layer | 0/TBD | Not started | - |
 | 3. Live Display | 0/TBD | Not started | - |
 | 4. Login Persistence | 0/TBD | Not started | - |

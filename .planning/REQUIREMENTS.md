@@ -7,7 +7,7 @@
 
 ### Menu Bar
 
-- [ ] **MBAR-01**: App icon always visible in macOS menu bar with no Dock icon (LSUIElement = YES in Info.plist)
+- [~] **MBAR-01**: App icon always visible in macOS menu bar with no Dock icon (LSUIElement = YES in Info.plist) — implemented in 01-01; awaiting human smoke test
 - [ ] **MBAR-02**: Menu bar displays a mini progress bar showing 4-hour window usage at all times
 - [ ] **MBAR-03**: Menu bar displays remaining token count next to the progress bar
 - [ ] **MBAR-04**: Menu bar icon/bar changes appearance (color or style) when current burn rate risks exhausting the 4-hour window before reset
@@ -18,7 +18,7 @@
 - [ ] **DISP-02**: Dropdown shows 4-hour rolling window with: progress bar, tokens used, tokens remaining, time until reset
 - [ ] **DISP-03**: Dropdown shows weekly window with: progress bar, tokens used, tokens remaining, date/time of reset
 - [ ] **DISP-04**: Dropdown shows last refresh timestamp
-- [ ] **DISP-05**: Dropdown includes a Quit menu item
+- [~] **DISP-05**: Dropdown includes a Quit menu item — implemented in 01-01; awaiting human smoke test
 
 ### Data
 
@@ -59,7 +59,7 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| MBAR-01 | Phase 1 | Pending |
+| MBAR-01 | Phase 1 | In progress (awaiting smoke test) |
 | MBAR-02 | Phase 3 | Pending |
 | MBAR-03 | Phase 3 | Pending |
 | MBAR-04 | Phase 3 | Pending |
@@ -67,7 +67,7 @@
 | DISP-02 | Phase 3 | Pending |
 | DISP-03 | Phase 3 | Pending |
 | DISP-04 | Phase 3 | Pending |
-| DISP-05 | Phase 1 | Pending |
+| DISP-05 | Phase 1 | In progress (awaiting smoke test) |
 | DATA-01 | Phase 2 | Pending |
 | DATA-02 | Phase 2 | Pending |
 | DATA-03 | Phase 2 | Pending |

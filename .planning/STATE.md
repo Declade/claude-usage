@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-03-11)
 ## Current Position
 
 Phase: 1 of 4 (Scaffold)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-11 — Roadmap created
+Plan: 1 of 1 in current phase (01-01 at checkpoint — awaiting human verify)
+Status: In progress — checkpoint:human-verify
+Last activity: 2026-03-11 — 01-01 tasks 1 and 2 complete, awaiting Task 3 verification
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 10%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
+- Total plans completed: 0 (01-01 in progress — at checkpoint)
 - Average duration: -
 - Total execution time: 0 hours
 
@@ -27,7 +27,7 @@ Progress: [░░░░░░░░░░] 0%
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-scaffold | 1 (in progress) | ~2min | - |
 
 **Recent Trend:**
 - Last 5 plans: -
@@ -45,7 +45,7 @@ Recent decisions affecting current work:
 - Pre-roadmap: Swift/SwiftUI over Electron — native feel, minimal memory footprint
 - Pre-roadmap: Read local JSONL files — only accurate data source; no API available
 - Pre-roadmap: File polling (vs FSEvents) — simpler; logs update infrequently
-- Open: @Observable (macOS 14+) vs ObservableObject (macOS 13+) — decide in Phase 1 scaffold
+- Decided: macOS 14.0 deployment target — enables @Observable throughout; @Observable chosen over ObservableObject
 
 ### Pending Todos
 
@@ -53,12 +53,13 @@ None yet.
 
 ### Blockers/Concerns
 
-- **Phase 1**: Decide deployment target (macOS 13 vs 14) before writing any view code — affects @Observable vs ObservableObject choice throughout the codebase
+- **Phase 1 (resolved)**: Deployment target decided — macOS 14.0, @Observable throughout
+- **Phase 1 (active)**: 01-01 Task 3 checkpoint — user must run verify-scaffold.sh and smoke test the app
 - **Phase 2**: Exact token limit values for 4-hour and weekly windows are not confirmed — check if Claude Code writes limit metadata to JSONL or a separate config file; if not, use user-editable defaults
 - **Phase 4**: UserNotifications in a menu bar app has edge cases around permission request timing — research before implementing threshold notifications (v2)
 
 ## Session Continuity
 
 Last session: 2026-03-11
-Stopped at: Roadmap created, ready to plan Phase 1
+Stopped at: 01-01 tasks 1-2 complete — at checkpoint:human-verify (Task 3)
 Resume file: None
